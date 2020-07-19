@@ -1,0 +1,53 @@
+body{font-size:62.5%}
+html.body{height:100%}
+.form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:24rem}
+.form-control:first-child{margin-right:10px}
+.hero_stat_item_list_head{
+    background-image:url('../images/bg_hero_stat_item_head.png'); 
+    height: 7.9rem;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:2rem
+}
+.hero_stat_item_list_head > div:first-child{float:left;}
+.hero_stat_item_list_head > div:last-child{float:right;}
+.hero_stat_item_list_head img{width:2.5rem;height:2.5rem}
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top:1px solid black;border-bottom:1px solid black
+  }
+ul.tabs li{float:left;display:inline-block;width:33.33%;background-repeat: no-repeat;text-indent:-99999px;
+    background-size: cover;
+    background-position: center;
+    height:4.2rem;}
+ul.tabs li:first-child{
+    background-image:url('../images/btn_hero_tab1_off.png');
+}
+ul.tabs li:nth-child(2){
+    background-image:url('../images/btn_hero_tab2_off.png');
+}
+ul.tabs li:last-child{
+    background-image:url('../images/btn_hero_tab3_off.png');
+}
+ul.tabs li:first-child.current{
+    background-image:url('../images/btn_hero_tab1_on.png');
+}
+ul.tabs li:nth-child(2).current{
+    background-image:url('../images/btn_hero_tab2_on.png');
+}
+ul.tabs li:last-child.current{
+    background-image:url('../images/btn_hero_tab3_on.png');
+}
+.tab-content{
+display: none;  
+
+}
+
+.tab-content.current{
+display: inherit;
+}

@@ -12,8 +12,18 @@ $(document).ready(function(){
             alert('영웅을 선택해주세요.');
         }
         else{
-            location.href='content_stat_list.html'
+            location.href='hero_stat_item_list.html'
         }
     })
-})
-//영웅선택 페이지
+    //영웅선택 페이지
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+        
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+        
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+    //영웅아이템페이지 탭메뉴
+});
