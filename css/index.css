@@ -88,8 +88,8 @@ html.body{height:100%}
     .btn_move_content_stat img{margin-top:45%;width:6.4rem;height:4.6rem;}
 }
 
-/* 모바일 가로, 테블릿 세로 (해상도 736px ~ 811px)*/
-@media all and (min-width:736px) and (max-width:811px) {
+/* 모바일 가로, 테블릿 세로 (해상도 736px ~ 812px)*/
+@media all and (min-width:736px) and (max-width:812px) {
     .index_wrap_bg{
         background-image:url('../images/bg_index_hero.png'); 
         height: 42.5rem;
