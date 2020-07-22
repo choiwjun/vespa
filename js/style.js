@@ -45,4 +45,84 @@ $(document).ready(function(){
         });
     });
     //통계리스트
+    var cnt = 0;
+    var arr = $.map($(".modal_party_hero li"), function(item) {
+        return $(item).attr("value");
+    });
+    console.log(arr)
+    $('.modal_hero_list li img').click(function(){
+        var h_img_add = $(this).attr('src');
+        /*var pictures = new Array(64);
+            for (var i = 0; i < 64 ; i++) {
+            pictures[i] = new Image();
+            pictures[i].src = "img"+ i + ".gif";
+        }
+        for(var i=0;i<3;i++){
+            arr[i]=i;
+        }
+        var imgg = $('.modal_hero_list li img');
+        var length = imgg.length;
+        var pictures = new Array(length);
+            for (var i = 0; i < length ; i++) {
+            pictures[i] = new Image();
+            pictures[i].src = "img"+ i + ".gif";
+        }
+        for(var i=0;i<3;i++){
+            arr[i]=i;
+        }*/
+        if(cnt == 0){
+            if($(this).hasClass('off') || $(this).hasClass('')){
+                $(this).removeClass('off').addClass('on')
+                $('.modal_party_hero li:first-child').html('<img src=' + h_img_add + '>').addClass('img_on').css('border','none'); 
+                cnt++;
+            }else{
+                $(this).removeClass('on').addClass('off')
+                $('.modal_party_hero li:first-child').empty('<img src=' + h_img_add + '>').removeClass('img_on').css('border','1px dashed #28b3b5')
+                cnt--;
+            }
+        }
+        else if(cnt == 1){
+            if($(this).hasClass('off') || $(this).hasClass('')){
+                $(this).removeClass('off').addClass('on')
+                $('.modal_party_hero li:nth-child(2)').html('<img src=' + h_img_add + '>').addClass('img_on').css('border','none'); 
+                cnt++;
+            }else{
+                $(this).removeClass('on').addClass('off')
+                $('.modal_party_hero li:nth-child(2)').empty('<img src=' + h_img_add + '>').removeClass('img_on').css('border','1px dashed #28b3b5')
+                cnt--;
+            }
+        }
+        else if(cnt == 2){
+            if($(this).hasClass('off') || $(this).hasClass('')){
+                $(this).removeClass('off').addClass('on')
+                $('.modal_party_hero li:last-child').html('<img src=' + h_img_add + '>').addClass('img_on').css('border','none'); 
+                cnt++;
+            }else{
+                $(this).removeClass('on').addClass('off')
+                $('.modal_party_hero li:last-child').empty('<img src=' + h_img_add + '>').removeClass('img_on').css('border','1px dashed #28b3b5')
+                cnt--;
+            }
+        }
+        
+        
+    })
+
+    $('.clear_btn,.party_select_wrap div:last-child p').click(function(){
+        cnt = 0
+        $('.modal_party_hero li').empty().css('border','1px dashed #28b3b5')
+        $('.modal_hero_list li img').removeClass('on')
+        $('.img_data1').attr('src' , 'images/btn_content_party_select.png')
+        $('.img_data2').attr('src' , 'images/btn_content_party_select.png')
+        $('.img_data3').attr('src' , 'images/btn_content_party_select.png')
+    })
+    $('.modal-footer button').click(function(){
+        var img1 = $('.modal_party_hero li:first-child img').attr('src')
+        var img2 = $('.modal_party_hero li:nth-child(2) img').attr('src')
+        var img3 = $('.modal_party_hero li:last-child img').attr('src')
+        
+        $('.img_data1').attr('src' , img1)
+        $('.img_data2').attr('src' , img2)
+        $('.img_data3').attr('src' , img3)
+    })
+    //컨텐츠 영웅리스트
 });
