@@ -54,7 +54,7 @@ $(document).ready(function(){
         return $(item).attr("value");
     });
     console.log(arr)
-    $('.modal_hero_list li img').click(function(){
+    $('.modal_hero_list li img').click(function(e){
         var h_img_add = $(this).attr('src');
         /*var pictures = new Array(64);
             for (var i = 0; i < 64 ; i++) {
@@ -96,22 +96,45 @@ $(document).ready(function(){
                 cnt=3;
             }
         }
-        
+
         $('.s1').click(function(){
             $(this).removeClass('on').removeClass('s1').addClass('off')
             $('.modal_party_hero li:first-child').empty('<img src=' + h_img_add + '>').removeClass('s11').removeClass('img_on').css('border','1px dashed #28b3b5')
-            
+            cnt=0
+            $(this).click(function(){
+                $(this).removeClass('off').addClass('on').addClass('s1')
+                $('.modal_party_hero li:first-child').html('<img src=' + h_img_add + '>').addClass('s11').addClass('img_on').css('border','none'); 
+                cnt=1
+                console.log(cnt)
+            })
         })
         $('.s2').click(function(){
             $(this).removeClass('on').removeClass('s2').addClass('off')
             $('.modal_party_hero li:nth-child(2)').empty('<img src=' + h_img_add + '>').removeClass('s22').removeClass('img_on').css('border','1px dashed #28b3b5')
-
+            cnt=1
+            $(this).click(function(){
+                $(this).removeClass('off').addClass('on').addClass('s2')
+                $('.modal_party_hero li:nth-child(2)').html('<img src=' + h_img_add + '>').addClass('s22').addClass('img_on').css('border','none'); 
+                cnt=2;
+                console.log(cnt)
+            })
         })
         $('.s3').click(function(){
             $(this).removeClass('on').removeClass('s3').addClass('off')
             $('.modal_party_hero li:last-child').empty('<img src=' + h_img_add + '>').removeClass('s33').removeClass('img_on').css('border','1px dashed #28b3b5')
-
+            cnt=2
+            $(this).click(function(){
+                $(this).removeClass('off').addClass('on').addClass('s3')
+                $('.modal_party_hero li:last-child').html('<img src=' + h_img_add + '>').addClass('s33').addClass('img_on').css('border','none'); 
+                cnt=3;
+                console.log(cnt)
+            })
         })
+        if($('.modal_hero_list li img').hasClass('on') >= 3){
+            cnt = 3;
+            return false;
+            console.log(cnt)
+        }
         console.log(cnt)
         /*else{
             $(this).removeClass('on').addClass('off')
