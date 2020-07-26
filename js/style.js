@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('.hero_stat_list_head img,.hero_stat_item_list_head img').click(function(){
+        window.history.back();
+    })
     $('.hero_stat_list_img_wrap li').click(function(){
         if($(this).hasClass('on')){
            $(this).removeClass('on'); 
