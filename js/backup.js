@@ -99,14 +99,7 @@ $(document).ready(function(){
                 cnt=3;
             }
         }
-        else if($('.modal_party_hero li:first-child').hasClass('s11') || $('.modal_party_hero li:nth-child(2)').hasClass('s22') || $('.modal_party_hero li:last-child').hasClass('s33')){
-            cnt--
-            $(this).click(function(){
-                cnt++
-            })
-            
-            return false
-        }
+
         $('.s1').click(function(){
             $(this).removeClass('on').removeClass('s1').addClass('off')
             $('.modal_party_hero li:first-child').empty('<img src=' + h_img_add + '>').removeClass('s11').removeClass('img_on').css('border','1px dashed #28b3b5')
@@ -115,7 +108,6 @@ $(document).ready(function(){
                 $(this).removeClass('off').addClass('on').addClass('s1')
                 $('.modal_party_hero li:first-child').html('<img src=' + h_img_add + '>').addClass('s11').addClass('img_on').css('border','none'); 
                 cnt=1
-
                 console.log(cnt)
             })
         })
@@ -127,7 +119,6 @@ $(document).ready(function(){
                 $(this).removeClass('off').addClass('on').addClass('s2')
                 $('.modal_party_hero li:nth-child(2)').html('<img src=' + h_img_add + '>').addClass('s22').addClass('img_on').css('border','none'); 
                 cnt=2;
-
                 console.log(cnt)
             })
         })
@@ -139,11 +130,14 @@ $(document).ready(function(){
                 $(this).removeClass('off').addClass('on').addClass('s3')
                 $('.modal_party_hero li:last-child').html('<img src=' + h_img_add + '>').addClass('s33').addClass('img_on').css('border','none'); 
                 cnt=3;
-
                 console.log(cnt)
             })
         })
-        
+        if($('.modal_hero_list li img').hasClass('on') >= 3){
+            cnt = 3;
+            return false;
+            console.log(cnt)
+        }
         console.log(cnt)
         /*else{
             $(this).removeClass('on').addClass('off')
