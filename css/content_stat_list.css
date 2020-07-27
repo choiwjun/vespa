@@ -8,6 +8,7 @@ input[type="radio"] {
 ul{padding:0}
 label{font-weight:400;display:block;margin-bottom:0}
 .content_stat_list_wrap p{text-align:center;font-size:1.4rem;margin-top:2rem}
+
 @media all and (min-width:1025px) {
     input[type="radio"] + label span {
         display:inline-block;
@@ -57,12 +58,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:7rem;margin-left:205px}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;height:100%;border-radius:10px;height:87rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;overflow-y: scroll;height:80rem;}
-    .content_stat_list_wrap > div:first-child li{width:35rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:11.25rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:35rem;height:11.25rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -117,12 +119,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:7rem;margin-left:145px}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:60rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:28rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:27.4rem;height:8.25rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:27.4rem;height:9.25rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -177,12 +180,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:6rem;margin-left:11.5rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:22rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:8.25rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:22rem;height:8.25rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -237,12 +241,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:6rem;margin-left:11.5rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1.5rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:22rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:8.25rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:22rem;height:8.25rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -297,12 +302,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:6rem;margin-left:10rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:25rem;margin-right:1rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:20rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:7.5rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:20rem;height:7.5rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -356,12 +362,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:6rem;margin-left:9rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:23rem;margin-right:1rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:18rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:6.5rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:18rem;height:6.5rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li
     {border:1px solid #d0d8d8;width:80%;text-align:left;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
@@ -416,12 +423,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:6rem;margin-left:8.5rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:22rem;margin-right:1rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
     .content_stat_list_wrap > div:first-child li{width:18rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:6.5rem;}
+    .content_stat_list_wrap > div:first-child li img{width:18rem;height:6.5rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:80%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}
@@ -475,12 +483,13 @@ label{font-weight:400;display:block;margin-bottom:0}
     .bage{position: absolute;top:5rem;margin-left:7.5rem}
     .bage img{width:2.7rem;height:2.7rem;margin:0 auto;}
     .content_stat_list_wrap > div{width:32%;float:left;background:white;overflow-y: scroll;height:100%;border-radius:10px;height:18rem;margin-right:1rem;}
-    .content_stat_list_wrap > div li.on{border:3px solid #28b3b5 !important}
+    .content_stat_list_wrap > div:first-child li.on img{border:3px solid #28b3b5 !important}
+.content_stat_list_wrap > div:nth-child(2) li.on,.content_stat_list_wrap > div:last-child li.on{border:3px solid #28b3b5 !important}
     .content_stat_list_wrap > div:last-child{margin-right:0}
     .content_stat_list_wrap > div h2{font-size:1.5rem;font-weight:bold;text-align:center;}
     .content_stat_list_wrap > div ul{text-align:center;}
-    .content_stat_list_wrap > div:first-child li{width:16rem;margin:0 auto 1rem auto;}
-    .content_stat_list_wrap > div:first-child li img{width:100%;height:5.5rem;}
+    .content_stat_list_wrap > div:first-child li{margin:0 auto 1rem auto;}
+    .content_stat_list_wrap > div:first-child li img{width:16rem;height:5.5rem;border-radius:10px;border:3px solid #7a8ca1}
     .content_stat_list_wrap > div:nth-child(2) li,.content_stat_list_wrap > div:nth-child(3) li{border:1px solid #d0d8d8;width:90%;text-align:left;padding:0 2rem 1.5rem 2rem;margin:0 auto;font-size:1.4rem;margin-bottom:1rem}
     .content_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
     button.on{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1.5rem}

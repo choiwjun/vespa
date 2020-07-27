@@ -18,6 +18,13 @@
     <![endif]-->
   </head>
   <body>
+    <script>
+        $(document).ready(function(){
+            $('#tab-1 td:nth-child(4) img').click(function(){
+                $(this).parent().children('.tool').toggle()
+            })
+        })
+    </script>
     <div class="hero_stat_list_wrap">
         <div class="hero_stat_item_list_head">
             <div>
@@ -42,10 +49,31 @@
         </div>
         <div class="hero_stat_item_list_content">
             <ul class="tabs">
-                <li class="tab-link current" data-tab="tab-1">영웅정보</li>
-                <li class="tab-link" data-tab="tab-2">아이템셋트</li>
-                <li class="tab-link" data-tab="tab-3">아이템메뉴</li>
+                <li class="tab-link current" data-tab="tab-1"><img src="images/img_hero_tab_on1_bg.png" />영웅정보</li>
+                <li class="tab-link" data-tab="tab-2"><img src="images/img_hero_tab_off2_bg.png" />아이템셋트</li>
+                <li class="tab-link" data-tab="tab-3"><img src="images/img_hero_tab_off3_bg.png" />아이템메뉴</li>
             </ul>
+            <script>
+                $(document).ready(function(){
+                    $('.tabs li').click(function(){
+                        if($('.tabs li:first-child').hasClass('current')){
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_on1_bg.png');
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_off2_bg.png');
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_off3_bg.png');
+                        }
+                        else if($('.tabs li:nth-child(2)').hasClass('current')){
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_on2_bg.png');
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_off1_bg.png');
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_off3_bg.png');
+                        }
+                        else if($('.tabs li:last-child').hasClass('current')){
+                            $('.tabs li:last-child img').attr('src','images/img_hero_tab_on3_bg.png');
+                            $('.tabs li:first-child img').attr('src','images/img_hero_tab_off1_bg.png');
+                            $('.tabs li:nth-child(2) img').attr('src','images/img_hero_tab_off2_bg.png');
+                        }
+                    })
+                })
+            </script>
             <div id="tab-1" class="tab-content current">
                 <div class="table_wrap">
                     <table>
@@ -70,42 +98,78 @@
                                 <td><img src="images/ico_1st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                             <tr>
                                 <td><img src="images/ico_2st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                             <tr>
                                 <td><img src="images/ico_3st.png" alt="" /></td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>블랙 드래곤 8T 1단계</td>
                                 <td>12위</td>
-                                <td><img src="images/ico_hero_treasure.png" alt="보물" /></td>
+                                <td><img src="images/ico_hero_treasure.png" alt="보물" />
+                                    <div class="tool">
+                                        <p>
+                                            알수없는 그림이 담긴 액자
+                                        </p>
+                                    </div>
+                                </td>
                                 <td><button data-toggle="modal" data-target="#myModal">초월특성보기</button></td>
                             </tr>
                         </tbody>

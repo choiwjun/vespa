@@ -2,15 +2,16 @@ $(document).ready(function(){
     $('.hero_stat_list_head img,.hero_stat_item_list_head img').click(function(){
         window.history.back();
     })
-    $('.hero_stat_list_img_wrap li').click(function(){
+    $('.hero_stat_list_img_wrap li').click(function(e){
+        var chk = 0
         if($(this).hasClass('on')){
-           $(this).removeClass('on'); 
+            $(this).removeClass('on'); 
         }
-        else{
-            $(this).addClass('on'); 
+        else if($('.hero_stat_list_img_wrap li').hasClass('on') < 1){
+            $(this).addClass('on')
         }
     });
-    $('.hero_select_btn button').click(function(){
+    $('.hero_select_btn button').on('click',function(){
         if($('.hero_stat_list_img_wrap li').hasClass('on') <= 0){
             alert('영웅을 선택해주세요.');
         }
@@ -35,6 +36,9 @@ $(document).ready(function(){
         $('.content_stat_list_wrap div:first-child .bage_img1').attr('src','images/img_content_stat_bage.png')
         $('.content_stat_list_wrap div:nth-child(2) ul').show();
         $('.content_stat_list_wrap div:nth-child(2) p').hide();
+        var msg = '결투장을 먼저 선택해주세요.'
+        $('.content_stat_list_wrap div:last-child p').html(msg).show();
+
     });
     $('.content_stat_list_wrap div:nth-child(2) ul li').click(function(){
         $('.content_stat_list_wrap div:nth-child(2) ul li').removeClass('on'); 
