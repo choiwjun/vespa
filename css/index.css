@@ -134,7 +134,7 @@ html.body{height:100%}
 @media all and (min-width:736px) and (max-width:812px) {
     .index_wrap_bg{
         background-image:url('../images/bg_index_hero.png'); 
-        height: 37.5rem;
+        height: 41.4rem;
         width:100%;
         background-size: cover;
         background-position: center;

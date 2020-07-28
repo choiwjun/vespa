@@ -3,13 +3,15 @@ $(document).ready(function(){
         window.history.back();
     })
     $('.hero_stat_list_img_wrap li').click(function(e){
-        var chk = 0
+        /*var chk = 0
         if($(this).hasClass('on')){
             $(this).removeClass('on'); 
         }
         else if($('.hero_stat_list_img_wrap li').hasClass('on') < 1){
             $(this).addClass('on')
-        }
+        }*/
+        $('.hero_stat_list_img_wrap li').removeClass('on');
+        $(this).addClass('on')
     });
     $('.hero_select_btn button').on('click',function(){
         if($('.hero_stat_list_img_wrap li').hasClass('on') <= 0){

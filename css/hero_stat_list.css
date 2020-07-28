@@ -6,6 +6,12 @@ input[type="radio"] {
 }
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 label{font-weight:400;}
+.hero_stat_list_img_wrap,.hero_stat_list_menu > div:last-child{
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.hero_stat_list_img_wrap::-webkit-scrollbar,.hero_stat_list_menu > div:last-child::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 @media all and (min-width:1025px) {
     ul{padding:1rem 0 1rem 1rem !important}
     input[type="radio"] + label span {
