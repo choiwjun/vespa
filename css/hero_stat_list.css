@@ -24,7 +24,7 @@ label{font-weight:400;}
         background-position:left 0 ;
         background-size: cover;
         cursor:pointer;
-        margin-right:1rem
+        margin-right:1rem 
     }
 
     input[type="radio"]:checked + label span {
@@ -47,7 +47,8 @@ label{font-weight:400;}
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding:1.5rem 2rem
+        padding:1.5rem 2rem;
+        height:100%;
     }
     .hero_stat_list_head{margin-bottom:1.5rem}
     .hero_stat_list_head h1{
@@ -65,11 +66,25 @@ label{font-weight:400;}
     .hero_stat_list_menu > div:last-child{overflow-y: scroll;}
     .hero_stat_list_img_wrap{float:right;width:75%;overflow-y: scroll;}
     .hero_stat_list_img_wrap ul{padding:0 !important}
-    .hero_stat_list_img_wrap ul li{border:5px solid #28475e;border-radius:10px;width:14%;height:14%;float:left;display:inline-block;margin-right:1rem;position: relative;
+    .hero_stat_list_img_wrap ul li{border:5px solid #28475e;border-radius:10px;width:14%;height:14%;float:left;display:inline-block;margin-right:1.5rem;position: relative;
     margin-bottom:1rem}
     .hero_stat_list_img_wrap ul li:last-child{margin-right:0}
     .hero_stat_list_img_wrap ul li img{width:100%;height:100%;border-radius:6px;}
     .hero_stat_list_img_wrap ul li.on{border:5px solid #28b3b5;}
-    .hero_stat_list_img_wrap ul li span{position: absolute;font-size:1.2rem;color:white;bottom:0px;text-align:center;width:100%;text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);}
+    .hero_stat_list_img_wrap ul li span{position: absolute;font-size:1.2rem;color:white;bottom:0px;text-align:center;width:100%;text-shadow: 0px 0px 2px rgba(0, 0, 0, 2);}
     .hero_select_btn{clear:both;width:27rem;height:4.2rem;margin:0 auto}
-    button{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:1rem}
+    button{clear:both;background:#28b3b5;color:white;border:none;width:27rem;height:4.2rem;text-align:center;font-size:1.5rem;margin-top:2rem}
+    @media all and (max-width:790px) {
+        .hero_stat_list_img_wrap ul li{border:5px solid #28475e;border-radius:10px;width:14%;height:14%;float:left;display:inline-block;margin-right:1rem;position: relative;
+            margin-bottom:1rem}
+    }
+    @media all and (min-width:520px) and (max-width:522px) {
+        .hero_stat_list_menu{width:30%}
+        .hero_stat_list_menu > div:last-child{height:200px !important;}
+        .hero_stat_list_img_wrap{width:65%}
+    }
+    @media all and (max-width:519px) {
+        .hero_stat_list_menu{width:30%}
+        .hero_stat_list_menu > div:last-child{height:200px !important;}
+        .hero_stat_list_img_wrap{width:65%;height:325px !important;}
+    }

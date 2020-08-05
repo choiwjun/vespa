@@ -19,6 +19,29 @@
     <![endif]-->
   </head>
   <body>
+    <script>
+        $(document).ready(function(){
+            $(window).resize(resizeContents);
+                resizeContents();
+            });
+            function resizeContents() {
+                $(".hero_stat_list_menu div:last-child").height($(window).height()-261);
+                $(".hero_stat_list_img_wrap").height($(window).height()-140);
+            }
+            function throttle(ms, fn) {
+                var allow = true;
+                function enable() {
+                    allow = true;
+                }
+                return function(e) {
+                    if(allow) {
+                    allow = false;
+                        setTimeout(enable, ms);
+                        fn.call(this, e);
+                    }
+                }
+            }
+    </script>
   <div name="test"></div>
     <div class="hero_stat_list_wrap">
         <div class="hero_stat_list_head">
