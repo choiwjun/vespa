@@ -17,8 +17,8 @@ html,body{height:100%;overflow:hidden;}
 .btn_move_hero_stat{
     position: fixed;
     top:27%;
-    left:10%;
-    background-image:url('../images/btn_hero_stat.png'); 
+    left:13%;
+    background-image:url('../images/btn_hero_stat_n.png'); 
     width:22%;
     height:47%;
     background-size: contain;
@@ -32,24 +32,12 @@ html,body{height:100%;overflow:hidden;}
     position: fixed;
     top:27%;
     right:10%;
-    background-image:url('../images/btn_content_stat_test.png'); 
+    background-image:url('../images/btn_content_stat_n.png'); 
     width:22%;
     height:47%;
     background-size: contain;
+    background-position:right 0;
     background-repeat: no-repeat;
     text-align: center;
 }
 .btn_move_content_stat img{width:39%;position: absolute;top:0; left:0; bottom:0; right:0;margin:40% auto;}
-@media all and (min-width:812px) and (max-width:823px){
-    .btn_move_hero_stat{
-        top:25%;
-        left:15%
-    }
-    .btn_move_content_stat{
-        top:25%;
-        right:15%
-    }
-    .btn_move_hero_stat img{width:30%;position: absolute;top:0; left:-15%; bottom:0; right:0;margin:32% auto;}
-    .btn_move_content_stat img{width:39%;position: absolute;top:0; left:-17%; bottom:0; right:0;margin:35% auto;}
-
-}

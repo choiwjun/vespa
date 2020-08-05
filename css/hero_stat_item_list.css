@@ -11,15 +11,13 @@ html.body{height:100%}
 #tab-1 table td:nth-child(4){position: relative;}
 .tool p{margin:0;letter-spacing:-1px;}
 .modal-title{font-weight:700 !important;}
-.modal-content{width:32.5rem !important}
 .select_wrap{float:left;}
 .table_wrap{margin-top:0 !important;padding-top:1rem !important}
 .table_wrap table th{padding-bottom:1rem !important}
 .modal-body > div{position: relative;margin-bottom:0.5rem !important}
 .modal-body h2{margin:0 !important;position: absolute;top:35%;}
-.modal-body li img{width:3rem !important;height:3rem !important;}
 .modal-body li{margin-right:0.5rem !important;}
-.modal-body ul{overflow:hidden;margin-top:0.5rem !important;margin-bottom:0 !important}
+.modal-body ul{overflow:hidden;margin-top:1rem !important;margin-bottom:1rem}
 .hero_stat_item_list_content{padding-top:13rem}
     .form-control{font-size:1.5rem;color:#333;float:left;border:1px solid #151515;border-radius:0;width:14rem;}
     .form-control:first-child{margin-right:10px}
@@ -109,9 +107,9 @@ html.body{height:100%}
     .modal-footer{padding-top:0}
     .modal-content{width:35rem;margin:0 auto;padding-bottom:0;overflow-y:scroll;}
     .modal-body{overflow: hidden;clear:both;}
-    .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem}
+    .modal-body > div{border:1px solid #a2abab;overflow:hidden;padding:0 1rem;margin-bottom:1rem;position: relative;z-index:1}
     .modal-body h2{float:left;font-size:1.4rem;font-weight:bold;}
-    .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem}
+    .modal-body li{float:left;display:inline-block;list-style:none;margin-right:1rem;margin-bottom:0.5rem;position: relative;}
     .modal-body li:last-child{margin-right:0}
     .modal-body li img{width:3.6rem;height:3.6rem;vertical-align:top;border-radius:10px;border:2px solid #7a8ca1;}
     .modal-body li .on{border:2px solid #28b3b5}
@@ -131,6 +129,14 @@ html.body{height:100%}
     #tab-2 .table_wrap table td:nth-child(1),#tab-3 .table_wrap table td:nth-child(1){background:none !important;}
     .tool{position: absolute;top:15%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;display:none;width:17rem;right:65%}
     .progress_wrap_c{margin:0 auto;width:80%;text-align:center;}
+    .modal_tool p{font-size:1.2rem;margin-bottom:0 !important}    
+    .modal-body li:nth-child(1) .modal_tool{position: absolute;top:0;left:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}  
+    .modal-body li:nth-child(2) .modal_tool{position: absolute;top:0;left:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}   
+    .modal-body li:nth-child(3) .modal_tool{position: absolute;top:0;left:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}
+    .modal-body li:nth-child(4) .modal_tool{position: absolute;top:0;right:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}
+    .modal-body li:nth-child(5) .modal_tool{position: absolute;top:0;right:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}
+    .modal-body li:nth-child(6) .modal_tool{position: absolute;top:0;right:95%;background:white;border-radius:10px;border:2px solid #28b3b5;padding:1rem;z-index:2;width:13rem;display:none;}
+
     @media all and (max-width:354px) {
         .form-control{width:10rem}
     }
